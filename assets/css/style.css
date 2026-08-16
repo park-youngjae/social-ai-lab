@@ -471,6 +471,9 @@ h1, h2, h3 { text-wrap: balance; }
   font-size: 14px;
   white-space: nowrap;
 }
+.member-email {
+  border-top: none;
+}
 
 /* Publications */
 .pub-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 28px; }
