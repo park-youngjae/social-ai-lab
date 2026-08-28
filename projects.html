@@ -1,19 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Research projects of Social Artificial Intelligence Lab at Kwangwoon University.">
-  <meta name="theme-color" content="#7D1A2D">
-  <script>document.documentElement.classList.add('js');</script>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Research projects of Social Artificial Intelligence Lab at Kwangwoon University.">
+
+  <meta
+    name="theme-color"
+    content="#7D1A2D">
+
+  <script>
+    document.documentElement.classList.add('js');
+  </script>
+
   <title>Projects | Social AI Lab.</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link
+    rel="stylesheet"
+    href="assets/css/style.css">
+
 
   <style>
+
     .projects-intro {
       max-width: 780px;
       margin: 0 0 42px;
@@ -22,285 +50,616 @@
       line-height: 1.8;
     }
 
+
     .projects-list {
       border-top: 1px solid var(--line);
     }
+
 
     .project-item {
       display: grid;
       grid-template-columns: 170px minmax(0, 1fr);
       gap: 36px;
+
       padding: 38px 0;
+
       border-bottom: 1px solid var(--line);
     }
 
+
     .project-period {
       display: block;
+
       color: var(--kw);
+
       font-size: 14px;
       font-weight: 800;
     }
 
+
     .project-main h2 {
       margin: 0;
+
       color: var(--text);
+
       font-size: clamp(21px, 2.3vw, 28px);
       line-height: 1.45;
       letter-spacing: -.025em;
+
       word-break: keep-all;
     }
+
 
     .project-meta {
       display: flex;
       flex-wrap: wrap;
+
       gap: 8px;
+
       margin-top: 18px;
     }
+
 
     .project-meta span {
       display: inline-flex;
       align-items: center;
+
       min-height: 30px;
+
       padding: 6px 11px;
+
       border: 1px solid var(--line);
       border-radius: 999px;
+
       background: #fff;
+
       color: #5d5054;
+
       font-size: 12px;
       font-weight: 650;
     }
 
+
     .project-meta .role {
       border-color: rgba(125, 26, 45, .18);
+
       background: var(--kw-soft);
+
       color: var(--kw);
     }
 
+
     @media (max-width: 760px) {
+
       .project-item {
         grid-template-columns: 1fr;
+
         gap: 12px;
+
         padding: 30px 0;
       }
+
     }
+
   </style>
+
 </head>
+
 
 <body>
 
+
+<!-- =========================================
+     Header
+========================================= -->
+
 <header class="site-header">
+
   <div class="container navbar">
 
-    <a class="brand" href="index.html">
-      <span>Social AI Lab</span><span class="brand-dot">.</span>
+
+    <a
+      class="brand"
+      href="index.html">
+
+      <span>Social AI Lab</span>
+      <span class="brand-dot">.</span>
+
     </a>
 
-    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
-      <span></span><span></span><span></span>
+
+    <button
+      class="menu-toggle"
+      aria-label="Open navigation"
+      aria-expanded="false">
+
+      <span></span>
+      <span></span>
+      <span></span>
+
     </button>
 
-    <nav class="nav-links" aria-label="Main navigation">
-      <div class="nav-item"><a class="nav-link" href="index.html">Home</a></div>
 
-      <div class="nav-item has-dropdown">
-        <a class="nav-link" href="team.html">Team <span class="chev">⌄</span></a>
-        <div class="dropdown">
-          <a href="team.html#professor">Professor</a>
-          <a href="team.html#members">Members</a>
-          <a href="team.html#openings">Open Positions</a>
-        </div>
+    <nav
+      class="nav-links"
+      aria-label="Main navigation">
+
+
+      <div class="nav-item">
+
+        <a
+          class="nav-link"
+          href="index.html">
+          Home
+        </a>
+
       </div>
 
-      <div class="nav-item"><a class="nav-link" href="publications.html">Publications</a></div>
-      <div class="nav-item"><a class="nav-link" href="research.html">Research</a></div>
-      <div class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></div>
-      <div class="nav-item"><a class="nav-link" href="contact.html">Contact</a></div>
+
+      <div class="nav-item has-dropdown">
+
+        <a
+          class="nav-link"
+          href="team.html">
+
+          Team
+          <span class="chev">⌄</span>
+
+        </a>
+
+
+        <div class="dropdown">
+
+          <a href="team.html#professor">
+            Professor
+          </a>
+
+          <a href="team.html#members">
+            Members
+          </a>
+
+          <a href="team.html#openings">
+            Open Positions
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="nav-item">
+
+        <a
+          class="nav-link"
+          href="publications.html">
+          Publications
+        </a>
+
+      </div>
+
+
+      <div class="nav-item">
+
+        <a
+          class="nav-link"
+          href="research.html">
+          Research
+        </a>
+
+      </div>
+
+
+      <div class="nav-item">
+
+        <a
+          class="nav-link active"
+          href="projects.html">
+          Projects
+        </a>
+
+      </div>
+
+
+      <div class="nav-item">
+
+        <a
+          class="nav-link"
+          href="contact.html">
+          Contact
+        </a>
+
+      </div>
+
+
     </nav>
 
   </div>
+
 </header>
 
 
+
+<!-- =========================================
+     Main
+========================================= -->
+
 <main>
 
-<section class="page-hero">
-  <div class="container reveal">
-    <h1 class="page-title-accent">Research Projects</h1>
-    <p>Ongoing projects involving Social Artificial Intelligence Lab.</p>
-  </div>
-</section>
 
-<section class="section">
-  <div class="container">
+  <!-- Page Hero -->
 
-    <div class="section-head reveal">
-      <span class="eyebrow">Ongoing</span>
-      <h2 class="section-title section-title--sm">Current Projects</h2>
-    </div>
+  <section class="page-hero">
 
-    <div class="projects-list">
-      <article class="project-item reveal">
-      
-        <div class="project-side">
-          <span class="project-period">2026.09–2029.08</span>
-        </div>
-      
-        <div class="project-main">
-      
-          <h2>
-            GK2A 위성자료 기반 일사량 예측을 위한 자기지도 시공간 모델 연구
-          </h2>
-      
-          <div class="project-meta">
-            <span>한국연구재단 (NRF) · 핵심연구(기본연구B)</span>
-            <span class="role">책임연구과제</span>
-          </div>
-      
-        </div>
+    <div class="container reveal">
 
-      
-      <!-- Project 1 -->
-      <article class="project-item reveal">
-        <div class="project-side">
-          <span class="project-period">2026.08–2026.12</span>
-        </div>
+      <h1 class="page-title-accent">
+        Research Projects
+      </h1>
 
-        <div class="project-main">
-          <h2>
-            CAN통신 연산용 단말기를 활용한 EV트럭 개조 구동부
-            이상감지 알고리즘 실증 연구
-          </h2>
-
-          <div class="project-meta">
-            <span>한국철도기술연구원 (KRRI)</span>
-            <span class="role">위탁연구과제</span>
-          </div>
-        </div>
-      </article>
-
-
-      <!-- Project 2 -->
-      <article class="project-item reveal">
-        <div class="project-side">
-          <span class="project-period">2026.07–2026.12</span>
-        </div>
-
-        <div class="project-main">
-          <h2>
-            국산 AI 반도체 기반 인공지능 모델 개발 및 최적화
-          </h2>
-
-          <div class="project-meta">
-            <span>정보통신산업진흥원 (NIPA)</span>
-            <span class="role">책임연구과제</span>
-          </div>
-        </div>
-      </article>
-
-
-      <!-- Project 3 -->
-      <article class="project-item reveal">
-        <div class="project-side">
-          <span class="project-period">2026.03–2027.02</span>
-        </div>
-
-        <div class="project-main">
-          <h2>RISE AI 관련 학과 지원 사업</h2>
-
-          <div class="project-meta">
-            <span>서울연구원</span>
-            <span class="role">공동연구과제</span>
-          </div>
-        </div>
-      </article>
-
-
-      <!-- Project 4 -->
-      <article class="project-item reveal">
-        <div class="project-side">
-          <span class="project-period">2026.03–2027.02</span>
-        </div>
-
-        <div class="project-main">
-          <h2>지능형로봇 혁신융합대학 사업단</h2>
-
-          <div class="project-meta">
-            <span>한국연구재단 (NRF)</span>
-            <span class="role">공동연구과제</span>
-          </div>
-        </div>
-      </article>
-
-
-      <!-- Project 5 -->
-      <article class="project-item reveal">
-        <div class="project-side">
-          <span class="project-period">2026.03–2028.02</span>
-        </div>
-
-        <div class="project-main">
-          <h2>
-            재난 예방을 위한 위성·기상 관측 데이터 통합 기반
-            정밀 위험지수 산정 기술 연구
-          </h2>
-
-          <div class="project-meta">
-            <span>광운대학교</span>
-            <span class="role">책임연구과제</span>
-          </div>
-        </div>
-      </article>
+      <p>
+        Ongoing projects involving Social Artificial Intelligence Lab.
+      </p>
 
     </div>
 
-  </div>
-</section>
+  </section>
 
+
+
+  <!-- Projects -->
+
+  <section class="section">
+
+    <div class="container">
+
+
+      <div class="section-head reveal">
+
+        <span class="eyebrow">
+          Ongoing
+        </span>
+
+        <h2 class="section-title section-title--sm">
+          Current Projects
+        </h2>
+
+      </div>
+
+
+
+      <div class="projects-list">
+
+
+        <!-- Project 1 -->
+
+        <article class="project-item reveal">
+
+          <div class="project-side">
+
+            <span class="project-period">
+              2026.09–2029.08
+            </span>
+
+          </div>
+
+
+          <div class="project-main">
+
+            <h2>
+              GK2A 위성자료 기반 일사량 예측을 위한
+              자기지도 시공간 모델 연구
+            </h2>
+
+
+            <div class="project-meta">
+
+              <span>
+                한국연구재단 (NRF) · 핵심연구(기본연구B)
+              </span>
+
+              <span class="role">
+                책임연구과제
+              </span>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- Project 2 -->
+
+        <article class="project-item reveal">
+
+          <div class="project-side">
+
+            <span class="project-period">
+              2026.08–2026.12
+            </span>
+
+          </div>
+
+
+          <div class="project-main">
+
+            <h2>
+              CAN통신 연산용 단말기를 활용한 EV트럭 개조 구동부
+              이상감지 알고리즘 실증 연구
+            </h2>
+
+
+            <div class="project-meta">
+
+              <span>
+                한국철도기술연구원 (KRRI)
+              </span>
+
+              <span class="role">
+                위탁연구과제
+              </span>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- Project 3 -->
+
+        <article class="project-item reveal">
+
+          <div class="project-side">
+
+            <span class="project-period">
+              2026.07–2026.12
+            </span>
+
+          </div>
+
+
+          <div class="project-main">
+
+            <h2>
+              국산 AI 반도체 기반 인공지능 모델 개발 및 최적화
+            </h2>
+
+
+            <div class="project-meta">
+
+              <span>
+                정보통신산업진흥원 (NIPA)
+              </span>
+
+              <span class="role">
+                책임연구과제
+              </span>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- Project 4 -->
+
+        <article class="project-item reveal">
+
+          <div class="project-side">
+
+            <span class="project-period">
+              2026.03–2027.02
+            </span>
+
+          </div>
+
+
+          <div class="project-main">
+
+            <h2>
+              RISE AI 관련 학과 지원 사업
+            </h2>
+
+
+            <div class="project-meta">
+
+              <span>
+                서울연구원
+              </span>
+
+              <span class="role">
+                공동연구과제
+              </span>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- Project 5 -->
+
+        <article class="project-item reveal">
+
+          <div class="project-side">
+
+            <span class="project-period">
+              2026.03–2027.02
+            </span>
+
+          </div>
+
+
+          <div class="project-main">
+
+            <h2>
+              지능형로봇 혁신융합대학 사업단
+            </h2>
+
+
+            <div class="project-meta">
+
+              <span>
+                한국연구재단 (NRF)
+              </span>
+
+              <span class="role">
+                공동연구과제
+              </span>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- Project 6 -->
+
+        <article class="project-item reveal">
+
+          <div class="project-side">
+
+            <span class="project-period">
+              2026.03–2028.02
+            </span>
+
+          </div>
+
+
+          <div class="project-main">
+
+            <h2>
+              재난 예방을 위한 위성·기상 관측 데이터 통합 기반
+              정밀 위험지수 산정 기술 연구
+            </h2>
+
+
+            <div class="project-meta">
+
+              <span>
+                광운대학교
+              </span>
+
+              <span class="role">
+                책임연구과제
+              </span>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+</main>
+
+
+
+<!-- =========================================
+     Footer
+========================================= -->
 
 <footer class="site-footer">
+
   <div class="container">
+
 
     <div class="footer-grid">
 
+
       <div class="footer-identity">
+
         <div class="footer-brand">
+
           Social Artificial Intelligence Lab<span class="brand-dot">.</span>
+
         </div>
+
 
         <img
           class="kw-mark"
           src="assets/images/kwangwoon-communicationmark.png"
           alt="Kwangwoon University">
+
       </div>
 
+
+
       <div class="footer-contact-block">
-        <div class="footer-contact-label">CONTACT</div>
+
+        <div class="footer-contact-label">
+          CONTACT
+        </div>
+
 
         <div class="footer-contact">
+
           Department of Information Convergence<br>
           Kwangwoon University · Seoul, Republic of Korea
 
+
           <div class="footer-email">
+
             <a href="mailto:youngjae.park@kw.ac.kr">
               youngjae.park@kw.ac.kr
             </a>
+
           </div>
+
         </div>
+
       </div>
 
+
     </div>
+
+
 
     <div class="footer-bottom">
-      <span>© 2026 Social AI Lab. All rights reserved.</span>
-      <span>Kwangwoon University</span>
+
+      <span>
+        © 2026 Social AI Lab. All rights reserved.
+      </span>
+
+      <span>
+        Kwangwoon University
+      </span>
+
     </div>
 
+
   </div>
+
 </footer>
 
-<button class="scroll-top" aria-label="Scroll to top">↑</button>
+
+
+<button
+  class="scroll-top"
+  aria-label="Scroll to top">
+  ↑
+</button>
+
 
 <script src="assets/js/main.js"></script>
 
+
 </body>
+
 </html>
