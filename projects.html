@@ -1,658 +1,207 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+/* =========================================================
+   Projects
+========================================================= */
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GZER871ZW7"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+.projects-list {
+  border-top: 1px solid var(--line);
+}
 
-    gtag('config', 'G-GZER871ZW7');
-  </script>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+/* ---------------------------------------------------------
+   Project Item
+--------------------------------------------------------- */
 
-  <meta
-    name="description"
-    content="Research projects of Social Artificial Intelligence Lab at Kwangwoon University.">
+.project-item {
+  display: grid;
+  grid-template-columns: 155px minmax(0, 1fr);
+  gap: 42px;
 
-  <meta
-    name="theme-color"
-    content="#7D1A2D">
+  padding: 42px 0;
 
-  <script>
-    document.documentElement.classList.add('js');
-  </script>
+  border-bottom: 1px solid var(--line);
+}
 
-  <title>Projects | Social AI Lab.</title>
 
-  <link
-    rel="preconnect"
-    href="https://fonts.googleapis.com">
+/* ---------------------------------------------------------
+   Left Side
+--------------------------------------------------------- */
 
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin>
+.project-side {
+  padding-top: 3px;
+}
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet">
+.project-period {
+  display: block;
 
-  <link
-    rel="stylesheet"
-    href="assets/css/style.css">
+  color: var(--kw);
 
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
 
-  <style>
 
-    .projects-list {
-      border-top: 1px solid var(--line);
-    }
+/* ---------------------------------------------------------
+   Main Content
+--------------------------------------------------------- */
 
+.project-main {
+  min-width: 0;
+}
 
-    .project-item {
-      display: grid;
-      grid-template-columns: 170px minmax(0, 1fr);
-      gap: 36px;
 
-      padding: 38px 0;
+/* Program / Funding Program */
 
-      border-bottom: 1px solid var(--line);
-    }
+.project-program {
+  margin-bottom: 10px;
 
+  color: var(--kw);
 
-    .project-period {
-      display: block;
+  font-size: 13px;
+  font-weight: 750;
+  line-height: 1.55;
+  letter-spacing: 0.01em;
 
-      color: var(--kw);
+  word-break: keep-all;
+}
 
-      font-size: 14px;
-      font-weight: 800;
-    }
 
+/* Research Project Title */
 
-    .project-main h2 {
-      margin: 0;
+.project-main h2 {
+  margin: 0;
 
-      color: var(--text);
+  max-width: 920px;
 
-      font-size: clamp(21px, 2.3vw, 28px);
-      line-height: 1.45;
-      letter-spacing: -.025em;
+  color: var(--text);
 
-      word-break: keep-all;
-    }
+  font-size: clamp(21px, 2.3vw, 28px);
+  font-weight: 750;
+  line-height: 1.48;
+  letter-spacing: -0.028em;
 
+  word-break: keep-all;
+}
 
-    .project-meta {
-      display: flex;
-      flex-wrap: wrap;
 
-      gap: 8px;
+/* ---------------------------------------------------------
+   Metadata
+--------------------------------------------------------- */
 
-      margin-top: 16px;
-    }
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 
+  gap: 8px;
 
-    .project-meta span {
-      display: inline-flex;
-      align-items: center;
+  margin-top: 18px;
+}
 
-      min-height: 30px;
+.project-meta span {
+  display: inline-flex;
+  align-items: center;
 
-      padding: 6px 11px;
+  min-height: 30px;
 
-      border: 1px solid var(--line);
-      border-radius: 999px;
+  padding: 6px 11px;
 
-      background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 999px;
 
-      color: #5d5054;
+  background: #fff;
 
-      font-size: 12px;
-      font-weight: 650;
-    }
+  color: #5d5054;
 
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 1.3;
+}
 
-    .project-meta .role {
-      border-color: rgba(125, 26, 45, .18);
+.project-meta .role {
+  border-color: rgba(125, 26, 45, 0.18);
 
-      background: var(--kw-soft);
+  background: var(--kw-soft);
 
-      color: var(--kw);
-    }
+  color: var(--kw);
+}
 
 
-    @media (max-width: 760px) {
+/* ---------------------------------------------------------
+   Optional Research Category
+--------------------------------------------------------- */
 
-      .project-item {
-        grid-template-columns: 1fr;
-        gap: 12px;
+.project-category {
+  display: inline-block;
 
-        padding: 30px 0;
-      }
+  margin-top: 16px;
 
-    }
+  color: var(--muted);
 
-  </style>
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+}
 
-</head>
 
+/* ---------------------------------------------------------
+   Responsive
+--------------------------------------------------------- */
 
-<body>
+@media (max-width: 900px) {
 
+  .project-item {
+    grid-template-columns: 135px minmax(0, 1fr);
+    gap: 28px;
 
-<!-- =========================================
-     Header
-========================================= -->
+    padding: 36px 0;
+  }
 
-<header class="site-header">
+}
 
-  <div class="container navbar">
 
-    <a
-      class="brand"
-      href="index.html">
+@media (max-width: 760px) {
 
-      <span>Social AI Lab</span>
-      <span class="brand-dot">.</span>
+  .project-item {
+    grid-template-columns: 1fr;
+    gap: 11px;
 
-    </a>
+    padding: 31px 0;
+  }
 
+  .project-side {
+    padding-top: 0;
+  }
 
-    <button
-      class="menu-toggle"
-      aria-label="Open navigation"
-      aria-expanded="false">
+  .project-program {
+    margin-bottom: 7px;
+  }
 
-      <span></span>
-      <span></span>
-      <span></span>
+  .project-main h2 {
+    font-size: 21px;
+    line-height: 1.5;
+  }
 
-    </button>
+  .project-meta {
+    margin-top: 15px;
+  }
 
+}
 
-    <nav
-      class="nav-links"
-      aria-label="Main navigation">
 
+@media (max-width: 480px) {
 
-      <div class="nav-item">
+  .project-item {
+    padding: 28px 0;
+  }
 
-        <a
-          class="nav-link"
-          href="index.html">
-          Home
-        </a>
+  .project-main h2 {
+    font-size: 20px;
+  }
 
-      </div>
+  .project-meta span {
+    font-size: 11px;
+  }
 
-
-      <div class="nav-item has-dropdown">
-
-        <a
-          class="nav-link"
-          href="team.html">
-
-          Team
-          <span class="chev">⌄</span>
-
-        </a>
-
-
-        <div class="dropdown">
-
-          <a href="team.html#professor">
-            Professor
-          </a>
-
-          <a href="team.html#members">
-            Members
-          </a>
-
-          <a href="team.html#openings">
-            Open Positions
-          </a>
-
-        </div>
-
-      </div>
-
-
-      <div class="nav-item">
-
-        <a
-          class="nav-link"
-          href="publications.html">
-          Publications
-        </a>
-
-      </div>
-
-
-      <div class="nav-item">
-
-        <a
-          class="nav-link"
-          href="research.html">
-          Research
-        </a>
-
-      </div>
-
-
-      <div class="nav-item">
-
-        <a
-          class="nav-link active"
-          href="projects.html">
-          Projects
-        </a>
-
-      </div>
-
-
-      <div class="nav-item">
-
-        <a
-          class="nav-link"
-          href="contact.html">
-          Contact
-        </a>
-
-      </div>
-
-
-    </nav>
-
-  </div>
-
-</header>
-
-
-
-<!-- =========================================
-     Main
-========================================= -->
-
-<main>
-
-
-  <!-- Page Hero -->
-
-  <section class="page-hero">
-
-    <div class="container reveal">
-
-      <h1 class="page-title-accent">
-        Research Projects
-      </h1>
-
-      <p>
-        Ongoing research programs involving Social Artificial Intelligence Lab.
-      </p>
-
-    </div>
-
-  </section>
-
-
-
-  <!-- Current Projects -->
-
-  <section class="section">
-
-    <div class="container">
-
-
-      <div class="section-head reveal">
-
-        <span class="eyebrow">
-          Ongoing
-        </span>
-
-        <h2 class="section-title section-title--sm">
-          Current Projects
-        </h2>
-
-      </div>
-
-
-
-      <div class="projects-list">
-
-
-        <!-- Project 1 -->
-
-        <article class="project-item reveal">
-
-          <div class="project-side">
-
-            <span class="project-period">
-              2026.09–2029.08
-            </span>
-
-          </div>
-
-
-          <div class="project-main">
-
-            <h2>
-              핵심연구(기본연구B)
-            </h2>
-
-
-            <div class="project-meta">
-
-              <span>
-                한국연구재단 (NRF)
-              </span>
-
-              <span class="role">
-                책임연구과제
-              </span>
-
-            </div>
-
-          </div>
-
-        </article>
-
-
-
-        <!-- Project 2 -->
-
-        <article class="project-item reveal">
-
-          <div class="project-side">
-
-            <span class="project-period">
-              2026.08–2026.12
-            </span>
-
-          </div>
-
-
-          <div class="project-main">
-
-            <h2>
-              한국철도기술연구원 위탁연구과제
-            </h2>
-
-
-            <div class="project-meta">
-
-              <span>
-                한국철도기술연구원 (KRRI)
-              </span>
-
-              <span class="role">
-                위탁연구과제
-              </span>
-
-            </div>
-
-          </div>
-
-        </article>
-
-
-
-        <!-- Project 3 -->
-
-        <article class="project-item reveal">
-
-          <div class="project-side">
-
-            <span class="project-period">
-              2026.07–2026.12
-            </span>
-
-          </div>
-
-
-          <div class="project-main">
-
-            <h2>
-              국산 AI 반도체 기반 AI 모델 개발
-            </h2>
-
-
-            <div class="project-meta">
-
-              <span>
-                정보통신산업진흥원 (NIPA)
-              </span>
-
-              <span class="role">
-                책임연구과제
-              </span>
-
-            </div>
-
-          </div>
-
-        </article>
-
-
-
-        <!-- Project 4 -->
-
-        <article class="project-item reveal">
-
-          <div class="project-side">
-
-            <span class="project-period">
-              2026.03–2027.02
-            </span>
-
-          </div>
-
-
-          <div class="project-main">
-
-            <h2>
-              RISE AI 관련 학과 지원 사업
-            </h2>
-
-
-            <div class="project-meta">
-
-              <span>
-                서울연구원
-              </span>
-
-              <span class="role">
-                공동연구과제
-              </span>
-
-            </div>
-
-          </div>
-
-        </article>
-
-
-
-        <!-- Project 5 -->
-
-        <article class="project-item reveal">
-
-          <div class="project-side">
-
-            <span class="project-period">
-              2026.03–2027.02
-            </span>
-
-          </div>
-
-
-          <div class="project-main">
-
-            <h2>
-              지능형로봇 혁신융합대학 사업
-            </h2>
-
-
-            <div class="project-meta">
-
-              <span>
-                한국연구재단 (NRF)
-              </span>
-
-              <span class="role">
-                공동연구과제
-              </span>
-
-            </div>
-
-          </div>
-
-        </article>
-
-
-
-        <!-- Project 6 -->
-
-        <article class="project-item reveal">
-
-          <div class="project-side">
-
-            <span class="project-period">
-              2026.03–2028.02
-            </span>
-
-          </div>
-
-
-          <div class="project-main">
-
-            <h2>
-              광운대학교 교내 연구과제
-            </h2>
-
-
-            <div class="project-meta">
-
-              <span>
-                광운대학교
-              </span>
-
-              <span class="role">
-                책임연구과제
-              </span>
-
-            </div>
-
-          </div>
-
-        </article>
-
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-</main>
-
-
-
-<!-- =========================================
-     Footer
-========================================= -->
-
-<footer class="site-footer">
-
-  <div class="container">
-
-
-    <div class="footer-grid">
-
-
-      <div class="footer-identity">
-
-        <div class="footer-brand">
-
-          Social Artificial Intelligence Lab<span class="brand-dot">.</span>
-
-        </div>
-
-
-        <img
-          class="kw-mark"
-          src="assets/images/kwangwoon-communicationmark.png"
-          alt="Kwangwoon University">
-
-      </div>
-
-
-
-      <div class="footer-contact-block">
-
-        <div class="footer-contact-label">
-          CONTACT
-        </div>
-
-
-        <div class="footer-contact">
-
-          Department of Information Convergence<br>
-          Kwangwoon University · Seoul, Republic of Korea
-
-
-          <div class="footer-email">
-
-            <a href="mailto:youngjae.park@kw.ac.kr">
-              youngjae.park@kw.ac.kr
-            </a>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-    </div>
-
-
-
-    <div class="footer-bottom">
-
-      <span>
-        © 2026 Social AI Lab. All rights reserved.
-      </span>
-
-      <span>
-        Kwangwoon University
-      </span>
-
-    </div>
-
-
-  </div>
-
-</footer>
-
-
-
-<button
-  class="scroll-top"
-  aria-label="Scroll to top">
-  ↑
-</button>
-
-
-<script src="assets/js/main.js"></script>
-
-
-</body>
-
-</html>
+}
